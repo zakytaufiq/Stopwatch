@@ -2,7 +2,7 @@ body{
     background-color: #d8e0e7;
     font-family: 'Comic Sans' ,Arial, sans-serif;
     color: #60aeee;
-    text-shadow: 2px 2px #46494b; ;
+    text-shadow: 2px 2px #46494b; 
 }
 
 #text-title{
@@ -43,7 +43,6 @@ body{
     float: right;
     color: #46494b;
     text-shadow: none;
-    /* margin-left: 20px; */
 }
 
 
@@ -63,8 +62,6 @@ body{
   text-align: center;
   margin: 0px auto;
 }
-
-
 
 .timer-user{
     border-radius: 10px;
@@ -129,3 +126,46 @@ footer{
     text-shadow: none;
 }
 
+@media screen and (max-width: 660px){
+    body{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #displaytimer{
+        width: 100%;
+        font-size: 20px;
+        margin: 0 auto;
+        text-shadow: 1px 1px #46494b;
+      }
+
+    .container , .stopwatch{
+        padding: 15px;
+    }
+
+    .container{
+        width: auto;
+        margin-left: 0;
+    }
+
+    .main{
+        margin-bottom: 10px;
+    }
+
+      #time, .finish , .user, button {
+        font-size: 9px;
+    }
+
+    .finish{
+        padding: 0px;
+    }
+
+      .button ,.user img, #logo img{
+          width: 30px;
+          height: 30px;
+      }
+      
+      #startStop , #reset {
+          width: 70%;
+          height: 80%;
+      }
+}
